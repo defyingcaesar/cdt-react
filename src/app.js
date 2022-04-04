@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import { NavBar, Footer, Loading } from "./components";
-import { Home, Profile, Dashboards} from "./views";
+import { Home, Profile, Dashboards, Level, Pipes} from "./views";
 import ProtectedRoute from "./auth/protected-route";
 
 import "./app.css";
@@ -23,6 +23,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <ProtectedRoute path="/profile" component={Profile} />
           <ProtectedRoute path="/dashboards" component={Dashboards} />
+          <ProtectedRoute path="/level" component={Level} />
+          <ProtectedRoute path="/pipes" component={Pipes} />
         </Switch>
       </div>
       <Footer />
