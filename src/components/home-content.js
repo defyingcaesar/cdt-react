@@ -13,7 +13,7 @@ const HomeContent = () => (
             href="https://auth0.com/docs/connections"
           >
             <i className="fas fa-link mr-2" />
-            Configure other identity providers
+            Navigate through to Grafana
           </a>
         </h6>
         <p>

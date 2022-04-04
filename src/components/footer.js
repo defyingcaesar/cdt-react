@@ -1,12 +1,14 @@
 import React from "react";
 
+const logo ="https://i.ibb.co/rsjsrtg/cdt-icon-transparent.png";
+
 const Footer = () => (
   <footer className="bg-light p-3 text-center">
-    <div className="logo" />
+    <img className="mb-3 app-logo" src={logo} alt="Comdatech logo" width="25" />
     <p>
-      Sample project provided by{" "}
-      <a target="_blank" rel="noopener noreferrer" href="https://auth0.com">
-        Auth0
+      Developed by {" "}
+      <a target="_blank" rel="noopener noreferrer" href="https://comdatech.co.za">
+        Comdatech
       </a>
     </p>
   </footer>
