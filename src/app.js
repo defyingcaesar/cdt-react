@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import { NavBar, Footer, Loading } from "./components";
-import { Home, Profile, Dashboards, Level, Pipes} from "./views";
+import { Home, Profile, Dashboards, Level, Pipes, PipeOne, PipeTwo, PipeThree, PipeFour, PipeFive, Downstream } from "./views";
 import ProtectedRoute from "./auth/protected-route";
 
 import "./app.css";
@@ -25,6 +25,12 @@ const App = () => {
           <ProtectedRoute path="/dashboards" component={Dashboards} />
           <ProtectedRoute path="/level" component={Level} />
           <ProtectedRoute path="/pipes" component={Pipes} />
+          <ProtectedRoute path="/pipe-one" component={PipeOne} />
+          <ProtectedRoute path="/pipe-two" component={PipeTwo} />
+          <ProtectedRoute path="/pipe-three" component={PipeThree} />
+          <ProtectedRoute path="/pipe-four" component={PipeFour} />
+          <ProtectedRoute path="/pipe-five" component={PipeFive} />
+          <ProtectedRoute path="/downstream" component={Downstream} />
         </Switch>
       </div>
       <Footer />
