@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 // import { useAuth0 } from "@auth0/auth0-react";
 
@@ -13,9 +14,7 @@ const Dashboards = () => {
       <a href="/level" class="btn btn-warning btn-lg btn-block">
         Dam Level
       </a>
-      <a href="/pipes" class="btn btn-success btn-lg btn-block">
-        Pipes
-      </a>
+      <NavLink to="/pipes">Pipes</NavLink>
       <a href="/downstream" class="btn btn-primary btn-lg btn-block">
         Downstream
       </a>

@@ -20,7 +20,7 @@ const App = () => {
       <NavBar />
       <div className="container flex-grow-1">
         <Switch>
-          <Route path="https://comdatech.xyz" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <ProtectedRoute path="/profile" component={Profile} />
           <ProtectedRoute path="/dashboards" component={Dashboards} />
           <ProtectedRoute path="/level" component={Level} />

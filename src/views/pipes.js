@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 // import { useAuth0 } from "@auth0/auth0-react";
 
@@ -10,9 +11,10 @@ const Pipes = () => {
     <div>
       <h2>Pipes 1 - 5</h2>
         <div className="row">
-        <a href="/pipe-one" class="btn btn-primary btn-lg btn-block">
-          Pipe 1
-        </a>
+        
+        <div class="btn btn-primary btn-lg btn-block">
+        <NavLink to="/pipe-one">Pipe One</NavLink>
+        </div>
         <a href="/pipe-two" class="btn btn-primary btn-lg btn-block">
           Pipe 2
         </a>
