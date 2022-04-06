@@ -11,16 +11,10 @@ const Dashboards = () => {
     <div>
     <h2>Dashboards</h2>
       <div className="row">
-      <a href="/level" class="btn btn-warning btn-lg btn-block">
-        Dam Level
-      </a>
-      <NavLink to="/pipes">Pipes</NavLink>
-      <a href="/downstream" class="btn btn-primary btn-lg btn-block">
-        Downstream
-      </a>
-      <a href="/reports" class="btn btn-info btn-lg btn-block">
-        Reporting
-      </a>
+      <NavLink to="/level" className={"btn btn-success btn-lg btn-block"}>Level</NavLink>
+      <NavLink to="/pipes" className={"btn btn-warning btn-lg btn-block"}>Pipes</NavLink>
+      <NavLink to="/downstream" className={"btn btn-primary btn-lg btn-block"}>Downstream</NavLink>
+      <NavLink to="/reports" className={"btn btn-info btn-lg btn-block"}>Reports</NavLink>
       </div>
     </div>
   );
