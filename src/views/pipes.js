@@ -12,21 +12,11 @@ const Pipes = () => {
       <h2>Pipes 1 - 5</h2>
         <div className="row">
         
-        <div class="btn btn-primary btn-lg btn-block">
-        <NavLink to="/pipe-one">Pipe One</NavLink>
-        </div>
-        <a href="/pipe-two" class="btn btn-primary btn-lg btn-block">
-          Pipe 2
-        </a>
-        <a href="/pipe-three" class="btn btn-primary btn-lg btn-block">
-          Pipe 3
-        </a>
-        <a href="/pipe-four" class="btn btn-primary btn-lg btn-block">
-          Pipe 4
-        </a>
-        <a href="/pipe-five" class="btn btn-primary btn-lg btn-block">
-          Pipe 5
-        </a>
+        <NavLink to="/pipe-one" className={"btn btn-primary btn-lg btn-block"}>Pipe One</NavLink>
+        <NavLink to="/pipe-two" className={"btn btn-primary btn-lg btn-block"}>Pipe Two</NavLink>
+        <NavLink to="/pipe-three" className={"btn btn-primary btn-lg btn-block"}>Pipe Three</NavLink>
+        <NavLink to="/pipe-four" className={"btn btn-primary btn-lg btn-block"}>Pipe One</NavLink>
+        <NavLink to="/pipe-five" className={"btn btn-primary btn-lg btn-block"}>Pipe One</NavLink>
       </div>
     </div>
   );
