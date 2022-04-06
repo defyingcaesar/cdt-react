@@ -25,7 +25,7 @@ const Level = () => {
       <div className="row mt-5">
         <div className="col-md-12 col-sm-12 mb-3">
         <h2>Trendline</h2>
-          <iframe src="https://grafana.comdatech.xyz/grafana/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&from=1648764000000&to=1649089019952&panelId=5" width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&from=1648764000000&to=1649089019952&panelId=5" width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
         </div>
       </div>
     </div>
