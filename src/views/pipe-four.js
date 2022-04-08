@@ -11,7 +11,7 @@ const PipeFour = () => {
     <h2>Pipe Four</h2>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=1649002050573&to=1649088450573&panelId=5&" width="100%" height="500" frameBorder="0" title="Pipe 1"></iframe>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=10m&from=now&to=now-6h&panelId=5" width="100%" height="500" frameBorder="0" title="Pipe 1"></iframe>
         </div>
       </div>
       <div className="row">
