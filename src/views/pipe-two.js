@@ -11,12 +11,12 @@ const PipeTwo = () => {
     <h2>Pipe Two</h2>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=10m&from=now&to=now-6h&panelId=3" width="100%" height="500" frameBorder="0" title="Pipe 1"></iframe>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=10m&from=now&to=now-6h&panelId=3" width="100%" height="500" frameBorder="0" title="Pipe 2"></iframe>
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=now-7d&panelId=9" width="100%" height="100%" frameborder="0" title="Pipe 1 Acc"></iframe>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=now-7d&panelId=9" width="100%" height="100%" frameborder="0" title="Pipe 2 Acc"></iframe>
         </div>
       </div>
     </div>
