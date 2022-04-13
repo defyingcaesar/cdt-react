@@ -28,6 +28,20 @@ const Level = () => {
           <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&refresh=15m&from=now-30d&to=now&panelId=5" width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
         </div>
       </div>
+      <div className="row mt-5">
+        <div className="col-md-12 col-sm-12 mb-3">
+        <h2>Level Trendline - 30 Days</h2>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&refresh=15m&from=now-30d&to=now&panelId=29" width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
+        </div>
+      </div>
+      <div className="row mt-5">
+        <div className="col-md-12 col-sm-12 mb-3">
+        <h2>Percentage Trendline - 30 Days</h2>
+          <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&refresh=15m&from=now-30d&to=now&panelId=30" width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
+        </div>
+      </div>
+
+
     </div>
   );
 };
