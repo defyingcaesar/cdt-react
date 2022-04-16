@@ -19,6 +19,11 @@ const PipeOne = () => {
           <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=now-7d&panelId=8" width="100%" height="100%" frameborder="0" title="Pipe 1 Acc"></iframe>
         </div>
       </div>
+      <div className="row">
+        <div className="col-md-12 col-sm-12 mb-3">
+          <iframe src="https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=now-7d&panelId=17" width="100%" height="100%" frameborder="0" title="Pipe 1 Acc"></iframe>
+        </div>
+      </div>
     </div>
   );
 };
