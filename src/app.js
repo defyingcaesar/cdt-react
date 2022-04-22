@@ -4,6 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import { NavBar, Footer, Loading } from "./components";
 import { Home, Profile, Dashboards, Level, Pipes, PipeOne, PipeTwo, PipeThree, PipeFour, PipeFive, Downstream } from "./views";
+import Inflow from "./views/inflow";
 import ProtectedRoute from "./auth/protected-route";
 
 import "./app.css";
@@ -24,6 +25,7 @@ const App = () => {
           <ProtectedRoute path="/profile" component={Profile} />
           <ProtectedRoute path="/dashboards" component={Dashboards} />
           <ProtectedRoute path="/level" component={Level} />
+          <ProtectedRoute path="/inflow" component={Inflow} />
           <ProtectedRoute path="/pipes" component={Pipes} />
           <ProtectedRoute path="/pipe-one" component={PipeOne} />
           <ProtectedRoute path="/pipe-two" component={PipeTwo} />
