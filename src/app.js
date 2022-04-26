@@ -1,63 +1,43 @@
 import React from "react";
-import styled from "styled-components";
+import { Route, Switch } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
-const Main = styled("div")`
-  font-family: sans-serif;
-  background: #f0f0f0;
-  height: 100vh;
-`;
+import { NavBar, Footer, Loading } from "./components";
+import { Home, Profile, Dashboards, Level, Pipes, PipeOne, PipeTwo, PipeThree, PipeFour, PipeFive, Downstream } from "./views";
+import Inflow from "./views/inflow";
+import ProtectedRoute from "./auth/protected-route";
 
-const DropDownContainer = styled("div")`
-  width: 10.5em;
-  margin: 0 auto;
-`;
+import "./app.css";
 
-const DropDownHeader = styled("div")`
-  margin-bottom: 0.8em;
-  padding: 0.4em 2em 0.4em 1em;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: #3faffa;
-  background: #ffffff;
-`;
+const App = () => {
+  const { isLoading } = useAuth0();
 
-const DropDownListContainer = styled("div")``;
-
-const DropDownList = styled("ul")`
-  padding: 0;
-  margin: 0;
-  padding-left: 1em;
-  background: #ffffff;
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
-  color: #3faffa;
-  font-size: 1.3rem;
-  font-weight: 500;
-  &:first-child {
-    padding-top: 0.8em;
+  if (isLoading) {
+    return <Loading />;
   }
-`;
 
-const ListItem = styled("li")`
-  list-style: none;
-  margin-bottom: 0.8em;
-`;
-
-export default function App() {
   return (
-    <Main>
-      <h1>Custom Select/dropdown</h1>
-      <DropDownContainer>
-        <DropDownHeader>Mangoes</DropDownHeader>
-        <DropDownListContainer>
-          <DropDownList>
-            <ListItem>Mangoes</ListItem>
-            <ListItem>Apples</ListItem>
-            <ListItem>Oranges</ListItem>
-          </DropDownList>
-        </DropDownListContainer>
-      </DropDownContainer>
-    </Main>
+    <div id="app" className="d-flex flex-column h-100">
+      <NavBar />
+      <div className="container flex-grow-1">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <ProtectedRoute path="/profile" component={Profile} />
+          <ProtectedRoute path="/dashboards" component={Dashboards} />
+          <ProtectedRoute path="/level" component={Level} />
+          <ProtectedRoute path="/inflow" component={Inflow} />
+          <ProtectedRoute path="/pipes" component={Pipes} />
+          <ProtectedRoute path="/pipe-one" component={PipeOne} />
+          <ProtectedRoute path="/pipe-two" component={PipeTwo} />
+          <ProtectedRoute path="/pipe-three" component={PipeThree} />
+          <ProtectedRoute path="/pipe-four" component={PipeFour} />
+          <ProtectedRoute path="/pipe-five" component={PipeFive} />
+          <ProtectedRoute path="/downstream" component={Downstream} />
+        </Switch>
+      </div>
+      <Footer />
+    </div>
   );
-}
+};
+
+export default App;
