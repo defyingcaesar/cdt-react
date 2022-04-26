@@ -20,7 +20,7 @@ const options = [
     { label: '6d', value: 'now-6d' },
     { label: '7d', value: 'now-7d' },
     { label: '15d', value: 'now-15d' },
-    { label: '30d', value: 'now-30d' }
+    { label: '30d', value: 'now/M' }
   
   ];
 const panelIds = [

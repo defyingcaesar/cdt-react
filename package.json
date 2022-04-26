@@ -5,15 +5,17 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
     "react": "^16.14.0",
+    "react-date-range": "^1.4.0",
     "react-dom": "^16.14.0",
+    "react-range-picker": "^1.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0"
   },
   "scripts": {
     "start": "cross-env PORT=4040 react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject "
   },
   "eslintConfig": {
     "extends": "react-app"
