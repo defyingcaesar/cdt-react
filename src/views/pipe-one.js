@@ -20,7 +20,7 @@ const options = [
     { label: '6d', value: 'now-6d' },
     { label: '7d', value: 'now-7d' },
     { label: '15d', value: 'now-15d' },
-    { label: '30d', value: 'now/M' }
+    { label: '30d', value: 'now-30d' }
   
   ];
 const panelIds = [
@@ -51,12 +51,12 @@ const panelIds = [
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12 mb-3">
-              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[1].value}`} width="100%" height="100%" frameborder="0" title={`${panelIds.[1].label}`}></iframe>
+              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[1].value}`} width="100%" height="100%" frameBorder="0" title={`${panelIds.[1].label}`}></iframe>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12 mb-3">
-              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[2].value}`} width="100%" height="350" frameborder="0" title={`${panelIds.[2].label}`}></iframe>
+              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[2].value}`} width="100%" height="350" frameBorder="0" title={`${panelIds.[2].label}`}></iframe>
             </div>
           </div>
     </div>

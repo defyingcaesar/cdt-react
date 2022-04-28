@@ -40,12 +40,12 @@ const PipeThree = () => {
       </div>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-          <iframe src={`https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=${value}&panelId=10`} width="100%" height="100%" frameborder="0" title="Pipe 3 Acc"></iframe>
+          <iframe src={`https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=${value}&panelId=10`} width="100%" height="100%" frameBorder="0" title="Pipe 3 Acc"></iframe>
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-          <iframe src={`https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=${value}&panelId=20`} width="100%" height="350" frameborder="0" title="Pipe 3 History"></iframe>
+          <iframe src={`https://grafana.comdatech.xyz/d-solo/QrfhicPnk/da-gama-pipes?orgId=1&refresh=15m&from=now&to=${value}&panelId=20`} width="100%" height="350" frameBorder="0" title="Pipe 3 History"></iframe>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Dropdown = ({ label, value, options, onChange }) => {
   return (
     <label>
       {label}
-      <select value={value} onChange={onChange}>
+      <select value={value} className="custom-select" onChange={onChange}>
         {options.map((option) => (
         <option value={option.value}>{option.label}</option>
       ))}

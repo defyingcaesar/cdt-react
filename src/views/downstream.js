@@ -15,7 +15,7 @@ const Downstream = () => {
     <h2>Downstream</h2>
       <div className="row">
         <div className="col-md-12 col-sm-12 mb-3">
-        <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&from=now&to=now-6h&panelId=27" width="100%" height="450" frameborder="0" title="Downstream"></iframe>
+        <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&from=now&to=now-6h&panelId=27" width="100%" height="450" frameBorder="0" title="Downstream"></iframe>
         </div>
       </div>
       <div className="row">
