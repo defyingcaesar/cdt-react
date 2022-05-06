@@ -46,17 +46,17 @@ const panelIds = [
         <h2>Pipe One</h2>
           <div className="row">
             <div className="col-md-12 col-sm-12 mb-3">
-              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=now-1d&panelId=${panelIds.[0].value}`} width="100%" height="500" frameBorder="0" title={`${panelIds.[0].label}`}></iframe>
+              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=now-1d&panelId=2`} width="100%" height="500" frameBorder="0" title={`${panelIds.[0].label}`}></iframe>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12 mb-3">
-              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[1].value}`} width="100%" height="100%" frameBorder="0" title={`${panelIds.[1].label}`}></iframe>
+              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=8`} width="100%" height="100%" frameBorder="0" title={`${panelIds.[1].label}`}></iframe>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12 mb-3">
-              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=${panelIds.[2].value}`} width="100%" height="350" frameBorder="0" title={`${panelIds.[2].label}`}></iframe>
+              <iframe src={`${BaseUrl}/${GraphFolder}?${orgId}&${refresh}&from=now&to=${value}&panelId=18`} width="100%" height="350" frameBorder="0" title={`${panelIds.[2].label}`}></iframe>
             </div>
           </div>
     </div>
