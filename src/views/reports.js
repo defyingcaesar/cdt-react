@@ -22,6 +22,9 @@ const Reports = () => {
     
     <h2>Reports</h2>
       <div className="row">
+      <div className="col-md-12 col-sm-12 mb-3">
+        <a href="http://18.234.46.130:1880/ui/#!/1" className="btn btn-info btn-lg btn-block">Da Gama Reports</a>
+      </div>
         <div className="col-md-12 col-sm-12 mb-3">
             <iframe src="http://18.234.46.130:1880/ui/#!/1" width="100%" height="650" frameBorder="0" title="Node Red Reports"></iframe>
         </div>
