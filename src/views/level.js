@@ -21,7 +21,7 @@ const [value, setValue] = React.useState('now-7d');
 
 const handleChange = (event) => {
     setValue(event.target.value);
-  };
+};
   return (
     <div>
       <div className="row pb-2">
