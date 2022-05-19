@@ -11,6 +11,7 @@ const Dashboards = () => {
     <div>
     <h2>Dashboards</h2>
       <div className="row">
+      <NavLink to="/overview" className={"btn btn-success btn-lg btn-block"}>Overview</NavLink>
       <NavLink to="/inflow" className={"btn btn-info btn-lg btn-block"}>Inflow</NavLink>
       <NavLink to="/level" className={"btn btn-success btn-lg btn-block"}>Dam Level</NavLink>
       <NavLink to="/pipes" className={"btn btn-warning btn-lg btn-block"}>Pipes and Release</NavLink>

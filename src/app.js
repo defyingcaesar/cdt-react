@@ -6,6 +6,7 @@ import { NavBar, Footer, Loading } from "./components";
 import { Home, Profile, Dashboards, Level, Pipes, PipeOne, PipeTwo, PipeThree, PipeFour, PipeFive, Downstream } from "./views";
 import Inflow from "./views/inflow";
 import Reports from "./views/reports";
+import Overview from "./views/overview";
 import ProtectedRoute from "./auth/protected-route";
 
 import "./app.css";
@@ -35,6 +36,7 @@ const App = () => {
           <ProtectedRoute path="/pipe-five" component={PipeFive} />
           <ProtectedRoute path="/downstream" component={Downstream} />
           <ProtectedRoute path="/reports" component={Reports} />
+          <ProtectedRoute path="/overview" component={Overview} />
         </Switch>
       </div>
       <Footer />
