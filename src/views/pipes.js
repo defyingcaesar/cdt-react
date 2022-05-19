@@ -12,7 +12,7 @@ const Pipes = () => {
       <h2>Pipes And Release</h2>
       <div className="row">
       <div className="col-md-4 col-sm-12 mb-3">
-        <iframe src="https://grafana.comdatech.xyz/d-solo/u_11G1Pnz/calibration-dashboard?orgId=1&from=now&to=now-2h&panelId=54" width="1000" height="200" frameBorder="0" title="dam-pipes"></iframe>
+        <iframe src="https://grafana.comdatech.xyz/d-solo/u_11G1Pnz/calibration-dashboard?orgId=1&from=now-2d&to=now&panelId=54" width="1000" height="200" frameBorder="0" title="dam-pipes"></iframe>
       </div>
       </div>
         <div className="row">
