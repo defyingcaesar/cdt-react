@@ -19,15 +19,6 @@ const MainNav = () => (
     >
       Dashboards
     </NavLink>
-
-    <NavLink
-      to="/profile"
-      exact
-      className="nav-link"
-      activeClassName="router-link-exact-active"
-    >
-      Profile
-    </NavLink>
   </div>
 );
 

@@ -38,16 +38,21 @@ const handleChange = (event) => {
           <iframe src="https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&refresh=15m&from=now-1d&to=now&panelId=13" width="auto" height="100%" frameBorder="0" title="dam-volume"></iframe>
         </div>
       </div>
-      <div className="row mt-5">
-        <div className="col-md-12 col-sm-12 mb-3">
-
-        <Dropdown 
+			<div className="row mt-5">
+				<div className="col-md-6 col-sm-12 mb-3">
+				<Dropdown 
         label="Time Range To Apply "
         options={options}
         value={value}
         onChange={handleChange}
         />
-
+				</div>
+				<div className="col-md-6 col-sm-12 mb-2">
+				<a href={`https://grafana.comdatech.xyz/d/h9Tk0jX7k/da-gama-reporting?orgId=1&from=${value}&to=now&inspect=2&inspectTab=data`} className="btn btn-info btn-lg btn-block" target="_blank" rel="noreferrer">Generate Report</a>
+				</div>
+			</div>
+      <div className="row mt-5">
+        <div className="col-md-12 col-sm-12 mb-3">
         <h2>Volume Trendline</h2>
           <iframe src={`https://grafana.comdatech.xyz/d-solo/uAmm-cE7k/da-gama-dam-level?orgId=1&refresh=15m&from=${value}&&to=now&panelId=5`} width="100%" height="400" title="dam-table" frameBorder="0"></iframe>
         </div>
